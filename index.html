@@ -1,26 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta name="google-site-verification" content="9FJf2b6ks-6OEgWOGdfVc9Lvn_IIqOWT7Dovy0b0Usg" />
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   
-  <!-- This is the exact phrase you will search for in Google -->
-  <title> Zarif File Drop Portal | upload to zarif </title> 
-  
-  <!-- The description that appears under the blue link in search results -->
-  <meta name="description" content="Secure file and photo upload portal. it is user for easy shareing files across devices">
-  
-  <!-- Explicitly commands Google to index this page -->
+  <title>Upload to Zarif | Zarif File Drop Portal</title> 
+  <meta name="description" content="Secure portal to upload photos and files directly to Zarif's storage.">
   <meta name="robots" content="index, follow">
   
   <style>
-    body, html { margin: 0; padding: 0; height: 100%; overflow: hidden; background: #121212; }
-    iframe { border: none; width: 100%; height: 100%; }
+    body, html { margin: 0; padding: 0; height: 100%; display: flex; flex-direction: column; background: #121212; color: #e0e0e0; font-family: sans-serif; }
+    
+    /* Clean, visible header for both humans and Googlebot */
+    .seo-header {
+      padding: 20px;
+      text-align: center;
+      background: #1e1e1e;
+      border-bottom: 1px solid #333;
+    }
+    .seo-header h1 { margin: 0 0 10px 0; font-size: 22px; color: #fff; }
+    .seo-header p { margin: 0 auto; font-size: 14px; color: #aaa; max-width: 500px; line-height: 1.4; }
+
+    /* The app takes up the rest of the screen */
+    iframe { 
+      flex-grow: 1; 
+      width: 100%; 
+      border: none; 
+      background: transparent;
+    }
   </style>
 </head>
 <body>
-  <!-- Your exact Google Apps Script URL -->
-  <iframe src="https://script.google.com/macros/s/AKfycbxiYovWGlfgE_Hhrqp4ZcVHZRNDcOVr0a108JpeelkVNUgWWZP9h5OLaf-RvpvGJ77BrA/exec"></iframe>
+
+  <header class="seo-header">
+    <h1>Zarif File Drop Portal</h1>
+    <p>This is my secure portal. Enter the PIN below to safely upload photos and files directly to my Drive and Telegram backup.</p>
+  </header>
+
+  <iframe src="https://script.google.com/macros/s/AKfycbxiYovWGlfgE_Hhrqp4ZcVHZRNDcOVr0a108JpeelkVNUgWWZP9h5OLaf-RvpvGJ77BrA/exec" title="Secure File Drop App"></iframe>
+
 </body>
 </html>
